@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 const ContactsPage = () => {
   return (
-    <div>
-      Contacts page
+    <div style={{display: "grid"}}>
+      <p>Contacts page</p>
       <Link to='/'>Main</Link>
     </div>
   )
