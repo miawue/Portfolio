@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import styles from './styles.module.scss'
 
 const MainPage = () => {
   return (
@@ -9,5 +10,5 @@ const MainPage = () => {
   )
 }
 
-export default MainPage
+export default MainPage;
 
