@@ -20,7 +20,7 @@ export const MainPageLoader = () => (
   >
     <rect x="30" y="390" rx="0" ry="0" width="1250" height="220" />
     <rect x="30" y="690" rx="0" ry="0" width="630" height="220" />
-    <rect x="1620" y="925" rx="0" ry="0" width="250" height="22" />
+    <rect x="1590" y="900" rx="0" ry="0" width="250" height="22" />
   </ContentLoader>
   </div>
 )

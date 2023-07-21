@@ -7,7 +7,8 @@ interface TextProps {
   color?: Color,
   fontWeight?: FontWeight,
   fontSize?: number,
-  noWrap?: boolean
+  noWrap?: boolean,
+  noSelect?: boolean
 }
 
 const Article: FC<TextProps> = (props) => {
@@ -17,6 +18,7 @@ const Article: FC<TextProps> = (props) => {
     fontWeight,
     fontSize,
     noWrap,
+    noSelect,
   } = props
 
   return (
@@ -26,7 +28,8 @@ const Article: FC<TextProps> = (props) => {
         color: color,
         fontWeight: fontWeight,
         fontSize: `${fontSize}px`,
-        whiteSpace: noWrap ? 'nowrap' : 'normal'
+        whiteSpace: noWrap ? 'nowrap' : 'normal',
+        userSelect: noSelect ? 'none' : 'auto'
       }}
     >
       {children}
