@@ -16,7 +16,7 @@ const MainPage = () => {
       </Article>
 
       <div style={{position: "absolute", top: 30, right: 30, width: 100, textAlign: "right"}}>
-        <Article fontWeight={FontWeight.Regular} fontSize={12} noSelect>
+        <Article fontWeight={FontWeight.Regular} fontSize={12}>
           *Put your mouse on emoji
         </Article>
       </div>
