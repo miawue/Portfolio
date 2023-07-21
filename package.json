@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "react-content-loader": "^6.2.1",
     "sass": "^1.64.0"
   }
 }

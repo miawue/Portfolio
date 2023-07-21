@@ -1,0 +1,1 @@
+export { MainPageLoader } from './ui/MainPageLoader'
