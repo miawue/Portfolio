@@ -1,35 +1,37 @@
 import { FC } from "react"
-
-type RGB = `rgb(${number}, ${number}, ${number})`;
-type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
-type HEX = `#${string}`;
-
-type Color = RGB | RGBA | HEX;
+import styles from './styles.module.scss'
+import { Color, FontWeight } from "app/types/styles"
 
 interface TextProps {
-  children: React.ReactNode,
-  color: Color,
-  fontWeight: number,
-  fontSize: number,
+  children?: React.ReactNode,
+  color?: Color,
+  fontWeight?: FontWeight,
+  fontSize?: number,
+  noWrap?: boolean
 }
 
 const Article: FC<TextProps> = (props) => {
   const {
     children,
-    color,
+    color = '#FFFFFF',
     fontWeight,
-    fontSize
+    fontSize,
+    noWrap,
   } = props
 
   return (
     <p
+      className={styles.article}
       style={{
         color: color,
         fontWeight: fontWeight,
-        fontSize: `${fontSize}px`
+        fontSize: `${fontSize}px`,
+        whiteSpace: noWrap ? 'nowrap' : 'normal'
       }}
     >
       {children}
     </p>
   )
 }
+
+export default Article;
